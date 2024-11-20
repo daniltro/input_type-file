@@ -1,0 +1,33 @@
+@import url(./components/preloader/preloader.css);
+@import url(./components/image-previewer/image-previewer.css);
+@import url(./components/file-uploader/file-upload.css);
+@import url(./components/app/app.css);
+@import url(./components/modal/modal.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .app-title {
+    font-size: 36px;
+  }
+  .upload-form {
+    inline-size: 100%;
+  }
+
+  .image-card {
+    inline-size: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .main {
+    padding: 20px;
+  }
+  .upload-form__submit-button {
+    inline-size: 100%;
+  }
+}

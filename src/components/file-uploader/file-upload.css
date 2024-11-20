@@ -1,0 +1,95 @@
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  min-block-size: 200px;
+  inline-size: 63%;
+  border: 4px dashed #cbd0dc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+.file-input-label {
+  display: flex;
+  justify-content: center;
+}
+
+.upload-form__file-input {
+  display: none;
+}
+
+.file-status {
+  display: flex;
+  justify-content: center;
+  block-size: min-content;
+  padding: 15px 10px;
+}
+
+.custom-file-input {
+  border: none;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  color: #cbd0dc;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-file-input::before {
+  content: "";
+  inline-size: 100%;
+  block-size: 1px;
+  background-color: #cbd0dc;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.custom-file-input:hover::before {
+  opacity: 1;
+}
+
+.upload-form__submit-button {
+  border: none;
+  border-radius: 4px;
+  padding: 9px 14px;
+  background: #088586;
+  block-size: min-content;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: #fff;
+  inline-size: 60%;
+  justify-self: center;
+  transition: background 0.5s;
+}
+
+.upload-form__submit-button:hover {
+  background: rgb(1, 97, 97);
+}
+
+.upload-form__submit-button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  background: #8d1533;
+}
+
+.error-message {
+  text-align: center;
+  color: #8d1533;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.drag-over {
+  transition: all 0.5s;
+  border: 4px dashed green;
+}
